@@ -1,0 +1,21 @@
+# 构建产物
+bin/
+obj/
+publish/
+*.user
+*.suo
+
+# 发布包
+*.pdb
+*.log
+
+# 本地设置
+settings.json
+diag.log
+check.log
+
+# 开发参考（不提交）
+_ref/
+_repo/
+tools/
+*.zip
