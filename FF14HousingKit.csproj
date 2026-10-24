@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>x64</Platforms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>哈德蒙房屋装修工具</AssemblyName>
+    <RootNamespace>FF14HousingKit</RootNamespace>
+    <Version>0.1.0</Version>
+    <AssemblyTitle>哈德蒙房屋装修工具</AssemblyTitle>
+    <Product>哈德蒙房屋装修工具</Product>
+    <Company>Hammond</Company>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationManifest Condition="'$(NoManifest)' != 'true'">app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <NoWarn>CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- 开发用目录，不参与编译 -->
+    <Compile Remove="_ref\**;repo\**;publish_sc\**" />
+    <Page Remove="repo\**;publish_sc\**" />
+    <EmbeddedResource Remove="_ref\**;repo\**;publish_sc\**" />
+    <None Remove="_ref\**;repo\**;publish_sc\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\logo.png" />
+  </ItemGroup>
+
+</Project>
